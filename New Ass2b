@@ -1,0 +1,103 @@
+# number_list = 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15
+
+# def fizzbuzz(number_list):
+    # for number in number_list:
+        # if number % 3 == 0 and number % 5 == 0:
+        #     print('fizzbuzz')
+        # elif number % 3 == 0:
+        #     print('fizz')
+        # elif number % 5 == 0:
+        #     print('buzz')
+        # else:
+        #     print(number)
+
+# number_list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+
+# fizzbuzz(number_list)
+
+
+# Define the Fizz function
+# def fizz(number_list):
+    #for number in number_list:
+        #if number % 3 == 0:
+            #print('fizz')
+        #else:
+            #print(number)
+
+# List of numbers
+# number_list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+
+# Call the Fizz function
+# fizz(number_list)
+
+
+
+
+for each_numb in range(1, 16):
+    print(each_numb)
+    if each_numb % 3 == 0 and each_numb % 5 == 0:
+        print('FizzBuzz')
+    elif each_numb % 3 == 0:
+        print('Fizz')
+    elif each_numb % 5 == 0:
+        print('Buzz')
+    else:
+        print(each_numb)
+    # Question 1 done and dusted
+    A1 = 75 - 100
+B2 = 70 - 74
+B3 = 65 - 69
+C4 = 60 - 64
+C5 = 55 - 59
+C6 = 50 - 54
+D7 = 45 - 49
+E8 = 40 - 44
+F9 = 0 - 39
+
+score = input('Enter student score: ')
+if score.isnumeric:
+    score = int(score)
+
+    if score >= 75:
+        print(f'student grade is A1 for score of {score}')
+    elif score >= 70:
+        print(f'student grade is B2 for score of {score}')
+    elif score >= 65:
+        print(f'student grade is B3 for score of {score}')
+    elif score >= 60:
+        print(f'student grade is C4 for score of {score}')
+    elif score >= 55:
+        print(f'student grade is C5 fore score of {score}')
+    elif score >= 50:
+        print(f'student grade is C6 for score of {score}')
+    elif score >= 45:
+        print (f'student grade is D7 for score of {score}')
+    elif score >= 40:
+        print(f'student grade is E8 for score of {score}')
+    else:
+        print(f' student grade is F9 for score of {score}')
+
+
+grade_list = ['A1', 'B2', 'B3', 'C4', 'C5', 'D7', 'D7', 'E8', 'F9']
+score_list = [75, 70, 65, 60, 55, 50, 45, 40]
+
+student_score = input('Enter student score: ')
+if student_score.isnumeric():
+    student_score = int(student_score)
+
+    for each_score in score_list:
+        index_pos = score_list.index(each_score)
+        # print(f'Index of {each_score} is {index_pos}')
+
+        if student_score >= each_score:
+            grade = grade_list[index_pos]
+            # print(grade)
+            # print()
+            print(f'student grade is {grade} for score of {student_score}')
+            break
+        elif student_score < 40:
+            print(f'student grade is F9 for score of {student_score}')
+            break
+
+else:
+    print('You have entered an invalid score')
